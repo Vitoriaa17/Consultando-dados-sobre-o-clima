@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dce3e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cartao-clima {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.caixa-pesquisa {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#cidade {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+#botao-buscar {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#botao-buscar:hover {
+    background-color: #0056b3;
+}
+
+.clima-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+#icone-clima {
+    width: 60px;
+    height: 60px;
+}
+
+#temperatura {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.detalhes-clima {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.item-detalhe {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.esconder {
+    display: none;
+}
+
+#mensagem-erro {
+    color: red;
+    margin-top: 15px;
+}
