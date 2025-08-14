@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima em Tempo Real</title>
+    <link rel="stylesheet" href="Clima.css">
+</head>
+<body>
+
+    <div class="cartao-clima">
+        <h1>Tempo</h1>
+        
+        <div class="caixa-pesquisa">
+            <input type="text" id="cidade" placeholder="Digite a cidade">
+            <button id="botao-buscar">Buscar</button>
+        </div>
+
+        <div id="resultado-clima" class="esconder">
+            <h2 id="nome-cidade"></h2>
+            <p id="hora-local"></p>
+
+            <div class="clima-principal">
+                <img id="icone-clima" src="" alt="Ícone do clima">
+                <p id="temperatura"></p>
+            </div>
+
+            <p id="condicao"></p>
+
+            <div class="detalhes-clima">
+                <div class="item-detalhe"><span> Sensação: </span><strong id="sensacao"></strong></div>
+                <div class="item-detalhe"><span> Umidade: </span><strong id="umidade"></strong></div>
+                <div class="item-detalhe"><span>Vento: </span><strong id="vento"></strong></div>
+                <div class="item-detalhe"><span> Pressão: </span><strong id="pressao"></strong></div>
+                <div class="item-detalhe"><span> Visibilidade: </span><strong id="visibilidade"></strong></div>
+                <div class="item-detalhe"><span> Índice UV: </span><strong id="indice-uv"></strong></div>
+            </div>
+        </div>
+
+        <div id="mensagem-erro" class="esconder">
+            <p>Cidade não encontrada. Tente novamente.</p>
+        </div>
+    </div>
+
+    <script src="clima.js"></script>
+</body>
+</html>
